@@ -1,0 +1,6 @@
+mission*.sh*
+solution*.sh*
+testcase*.sh*
+check.sh*
+clean.sh*
+keepfiles.txt*

@@ -1,0 +1,18 @@
+CHANGE LOG:
+
+Feb 19,2016:
+   -Added learn_sed directory
+   -Added learn_sed/learn01.sh, learn_sed/learn02.sh
+April 1, 2016:
+   -Updated mission/check.sh
+April 2016:
+   -Added mission/mission05.sh, mission/mission06.sh, mission/mission07.sh
+   -Added mission/solution05.sh, mission/solution06.sh, mission/solution07.sh
+April 27, 2016:
+   -Updated mission/check.sh
+   -Updated learn_bash/learn12.sh, learn_bash/learnAll.sh
+   -Added mission/testcase05.sh, mission/testcase06.sh, mission/testcase07.sh
+April 28, 2016:
+   -Updated mission/check.sh
+   -As of today, the mission/check.sh script will work with directories that 
+      contain spaces and quotes

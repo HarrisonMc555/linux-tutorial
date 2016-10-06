@@ -1,0 +1,30 @@
+
+
+Command Line
+-Essential Commands
+   -Directories/Files
+      -pwd
+      -ls
+      -cd
+      -mv
+      -cp
+      -rm
+      -mkdir
+      -rmdir
+   -Execution
+      -chmod
+   -File contents
+      -cat
+      -less
+      -more
+      -head
+      -tail
+   -Search/Parse
+      -grep
+      -sort
+      -diff
+   -Control
+      -Piping (|)
+      -Redirection (<, >, >>)
+
+
