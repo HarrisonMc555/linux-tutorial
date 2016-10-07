@@ -1,9 +1,0 @@
-
-
-An essential skill is knowing what comands you can use on the command line, 
-and thus, consequently, in shell scripts.
-
-These are some good tutorials:
-      -http://www.ee.surrey.ac.uk/Teaching/Unix/
-      -http://freeengineer.org/learnUNIXin10minutes.html
-	  -http://linuxcommand.org/

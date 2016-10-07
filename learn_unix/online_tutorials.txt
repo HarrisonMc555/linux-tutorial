@@ -1,0 +1,15 @@
+================
+Online Tutorials
+================
+
+These tutorials are well-written and quite comprehensive. If you have mastered
+all of the commands in this tutorial and want to learn more, these would be a
+good place to start.
+
+
+Tutorials
+=========
+
+  -http://www.ee.surrey.ac.uk/Teaching/Unix/
+  -http://freeengineer.org/learnUNIXin10minutes.html
+  -http://linuxcommand.org/

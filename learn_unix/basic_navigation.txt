@@ -1,0 +1,81 @@
+================
+Basic Navigation
+================
+
+This file contains things that you should know if you're just starting with
+Unix. You should make sure you're comfortable with everything in here before
+moving on to anything else.
+
+
+
+Command: ls
+===========
+
+The name 'ls' is short for list. Running this command will list all of the
+files in the current working directory.
+
+
+Command: cd
+===========
+
+The name 'ls' stands for "change directory". Running this command with no
+parameters will move you (the working directory) to your home directory (~). If
+you type a directory as a parameter, it will move you to that directory. You can
+specify relative directories (just start typing in the directory that's in the
+current location) or an absolute directory (start with a slash, '/', and type
+everything from there). You can also 'cd' into a directory several layers deep,
+i.e. a directory in a directory in a directory, etc.
+
+
+Command: mv
+===========
+
+The name 'mv' is short for "move". Running this command will move one file
+(or directory) to another location. You can either give two file names, in which
+case it will rename the first file to the name of the second, or you can specify
+one or more files or directories followed lastly by a final directory, in which
+case it will move all of the files into the last directory.
+
+
+Command: cp
+===========
+
+The name 'cp' is short for "copy". Run this command with two parameters: 1) the
+file you want to copy, and 2) the name of the copied file.
+
+
+Command: mkdir
+==============
+
+The name 'mkdir' is short for "make directory". Running this command will
+create a directory. By default it will be in the current directory.
+
+
+Command: rm and rmdir
+=====================
+
+The name 'rm' is short for "remove", and 'rmdir' is short for "remove
+directory". The rm command will delete any file that you give it as a parameter.
+**NOTE** This is not like deleting files on Windows or Mac, where the files are
+sent to a Recycling bin or an equivalent location. In Unix-style Operating
+Systems, it is extremely difficult or impossible to recover files after you call
+'rm' on them. The 'rmdir' is exactly the same but only will remove *empty*
+directories (although there are options you can use to get around this).
+
+
+Command: pwd
+============
+
+The name 'pwd' is an acronym for "print working directory". Running this command
+will print the full (absolute) path of the current working directory to the
+terminal. You can use this if you're not sure where you are in the file system.
+
+
+Command: exit
+=============
+
+Running this command will end the current session of whatever you are doing. If
+you type it directly at the command line, it will exit that session, and you wil
+need to open another one to continue working. If you are using ssh, it will
+close that session with the remote host and you will have to restart the
+connection to continue using it.

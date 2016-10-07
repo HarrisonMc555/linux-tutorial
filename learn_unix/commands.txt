@@ -1,30 +1,39 @@
+========
+Commands
+========
 
+This is a list of many good commands Unix users should know. However, even if
+you don't know all of these commands, you can still be proficient and move on to
+other portions of this tutorial. Commands that you should know before you move
+on are marked with an asterisk (*).
 
-Command Line
--Essential Commands
-   -Directories/Files
-      -pwd
-      -ls
-      -cd
-      -mv
-      -cp
-      -rm
-      -mkdir
-      -rmdir
-   -Execution
-      -chmod
-   -File contents
-      -cat
-      -less
-      -more
-      -head
-      -tail
-   -Search/Parse
-      -grep
-      -sort
-      -diff
-   -Control
-      -Piping (|)
-      -Redirection (<, >, >>)
+If you know all of these, you can move on to the other portions of this tutorial
+or check out the additional Online Tutorials.
 
+List Of Commands
+================
 
+  -Directories/Files
+    -pwd
+    -ls *
+    -cd *
+    -mv *
+    -cp *
+    -rm *
+    -mkdir *
+    -rmdir
+  -Execution
+    -chmod
+  -File contents
+    -cat
+    -less
+    -more
+    -head
+    -tail
+  -Search/Parse
+    -grep
+    -sort
+    -diff
+  -Control
+    -Piping (|) *
+    -Redirection (<, >, >>)
