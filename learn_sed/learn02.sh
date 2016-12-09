@@ -13,7 +13,7 @@
 # In the first tutorial, I used a slash, '/', as my delimeter. 
 # However, what if I wanted to match a file path?
 
-# In that case, I can "escape" the slash by prepending it with 
+# In that case, I need to "escape" the slash by prepending it with 
 # a backslash, '\'
 
 echo "/path/to/my/file.txt" | 
@@ -22,7 +22,7 @@ echo "/path/to/my/file.txt" |
 # Well that just looks terrible!
 
 # The great thing is that sed allows us to choose our OWN 
-# delimiters! You can use almost anything as a delimiter!
+# delimiters.  You can use almost anything as a delimiter!
 
 echo "Hello World" | sed 's_o_O_'
 echo "Hello World" | sed 's.o.O.'
@@ -60,4 +60,3 @@ echo "Hello World" | sed -r 's_(.*) _\1 \1 _'
 
 # Notice how I can use whatever delimiter I want to make it more 
 # (or less) readable.
-

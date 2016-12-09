@@ -26,7 +26,7 @@ echo "Hello World" | sed ''
 # instead of just an empty string.
 
 # The basic syntax of a script is:
-# <command>[<delimeter[<delimiter><pattern>]+]
+# <command>[<delimeter>[<pattern><delimiter>]+]
 
 # Let's introduce the most useful command: substitute (s)
 
@@ -51,4 +51,3 @@ echo "Hello World" | sed 's/l/L/'
 # We can change that by adding a "global" flag at the end.
 
 echo "Hello World" | sed 's/l/L/g'
-
