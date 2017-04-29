@@ -6,6 +6,12 @@ This file contains things that you should know if you're just starting with
 Linux. You should make sure you're comfortable with everything in here before
 moving on to anything else.
 
+In these examples, the command prompt starts with '$'. This will be followed by
+the command that the 'user' is typing in. The lines that do not start with '$'
+are the output results of the previouis command. If you type in these commands
+you should get similar results to what is listed here (depending on what is in
+your directories, etc.)
+
 
 
 Command: ls
@@ -51,11 +57,12 @@ $ cd
 Command: mv
 ===========
 
-The name 'mv' is short for "move". Running this command will move one file
-(or directory) to another location. You can either give two file names, in which
+The name 'mv' is short for "move". Running this command will move one file (or
+directory) to another location. You can either give two file names, in which
 case it will rename the first file to the name of the second, or you can specify
-one or more files or directories followed lastly by a final directory, in which
-case it will move all of the files into the last directory.
+one or more files (or directories) followed lastly by a final directory, in
+which case it will move all of the files (and/or directories) into the last
+directory.
 
 Example:
 $ ls
@@ -85,11 +92,12 @@ This is the text in file1.txt
 $ cat copiedfile.txt
 This is the text in file1.txt
 
+
 Command: mkdir
 ==============
 
-The name 'mkdir' is short for "make directory". Running this command will
-create a directory. By default it will be in the current directory.
+The name 'mkdir' is short for "make directory". Running this command will create
+a directory. By default it will be in the current directory.
 
 Example:
 $ mkdir newdir
@@ -101,7 +109,9 @@ Command: rm and rmdir
 =====================
 
 The name 'rm' is short for "remove", and 'rmdir' is short for "remove
-directory". The rm command will delete any file that you give it as a parameter.
+directory". The 'rm' command will delete any file that you give it as a
+parameter.
+
 **NOTE** This is not like deleting files on Windows or Mac, where the files are
 sent to a Recycling bin or an equivalent location. In Unix-style Operating
 Systems, such as Linux, it is extremely difficult or impossible to recover files
@@ -143,7 +153,7 @@ Command: exit
 
 Running this command will end the current session of whatever you are doing. If
 you type it directly at the command line, it will exit that session, and you wil
-need to open another one to continue working. If you are using ssh, it will 
+need to open another one to continue working. If you are using ssh, it will
 close that session with the remote host and you will have to restart the
 connection to continue using it. You can press Ctrl-D to send an "End of File"
 (EOF) character to perform the exit command.
