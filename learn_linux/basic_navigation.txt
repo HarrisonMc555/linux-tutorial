@@ -3,7 +3,7 @@ Basic Navigation
 ================
 
 This file contains things that you should know if you're just starting with
-Unix. You should make sure you're comfortable with everything in here before
+Linux. You should make sure you're comfortable with everything in here before
 moving on to anything else.
 
 
@@ -104,9 +104,10 @@ The name 'rm' is short for "remove", and 'rmdir' is short for "remove
 directory". The rm command will delete any file that you give it as a parameter.
 **NOTE** This is not like deleting files on Windows or Mac, where the files are
 sent to a Recycling bin or an equivalent location. In Unix-style Operating
-Systems, it is extremely difficult or impossible to recover files after you call
-'rm' on them. The 'rmdir' is exactly the same but only will remove *empty*
-directories (although there are options you can use to get around this).
+Systems, such as Linux, it is extremely difficult or impossible to recover files
+after you call 'rm' on them. The 'rmdir' is exactly the same but only will
+remove *empty* directories (although there are options you can use to get around
+this).
 
 Example:
 $ ls

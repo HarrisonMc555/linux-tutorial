@@ -16,31 +16,27 @@ attempt to complete what you were typing.
 This is typically used when typing in file and directory names. If your current
 directory looked like this:
 
-- Documents/
-- Downloads/
-- Pictures/
-- Videos/
-- misc/
-- README.txt
-- essay.doc
+Documents/  Downloads/  Pictures/  Videos/  misc/  README.txt  essay.doc
 
 Then typing in "Pic", then hitting Tab, would complete your current entry into
 "Pictures/". If you typed "es", then Tab, it would expand into "essays.doc". If
-you typed "D", then tab, it would complete to "Do" and then beep at you (or
-flash the screen or something). This is to signify that there are multiple valid
-completions of your entry. Hitting Tab again (maybe twice) will print out the
-options for valid completions to jog your memory.
+you typed "D", then tab, it would complete to "Do" and stop (and possibly beep
+at you or flash the screen or something). This is to signify that there are
+multiple valid completions of your entry. Hitting Tab again (maybe twice) will
+print out the options for valid completions to jog your memory. In this case, it
+would print out 'Documents/' and 'Downloads/', informing you that these are the
+two valid completions for 'D'.
 
 
 History
 =======
 
 Most terminals will keep a history of the commands you've executed. If you want
-to repeat a command, simply press the Up arrow. If you want to continue cycling
-through your previous commands, you can keep pressing Up (and Down to get more
-recent commands).
+to repeat a command, simply press the Up arrow (or Ctlr-p). If you want to
+continue cycling through your previous commands, you can keep pressing Up (and
+Down to get more recent commands).
 
-In addition, if you type "!" followed by any other characters, the terminal will
+In addition, if you type '!' followed by any other characters, the terminal will
 execute the most recent command that started with the characters that you typed
 in.
 

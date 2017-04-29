@@ -2,7 +2,7 @@
 Commands
 ========
 
-This is a list of many good commands Unix users should know. However, even if
+This is a list of many good commands Linux users should know. However, even if
 you don't know all of these commands, you can still be proficient and move on to
 other portions of this tutorial. Commands that you should know before you move
 on are marked with an asterisk (*).
