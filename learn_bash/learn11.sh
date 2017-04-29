@@ -35,11 +35,9 @@ do
     ((num+=2))
 done
 
-# The seq command can make lists of numbers 
-# for us.
+# The seq command can make lists of numbers for us.
 
-# Also, we can use the semicolon to avoid
-# needing a line with just "do".
+# Also, we can use the semicolon to avoid needing a line with just "do".
 
 echo
 echo "Numbers from 11 to 20"
@@ -47,9 +45,8 @@ for int in $(seq 11 20); do
     echo "Sequence number: $int"
 done
 
-# If you give just one number it will start from one, and 
-# if you give three it will use the middle as the number 
-# to increment by (instead of 1).
+# If you give just one number it will start from one, and if you give three it
+# will use the middle as the number to increment by (instead of 1).
 
 echo
 echo "Multiples of 3"

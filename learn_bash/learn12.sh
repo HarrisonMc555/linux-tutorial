@@ -6,10 +6,9 @@
 
 # Shell scripts can also deal with arrays.
 
-# You can initialize an array by hard-coding 
-# the values in, by iterating through and 
-# assigning values, or by piping the result 
-# of another command into the variable.
+# You can initialize an array by hard-coding the values in, by iterating through
+# and assigning values, or by piping the result of another command into the
+# variable.
 
 # Approach one: list
 # Note: You must use spaces, not commas or anything else.
@@ -34,22 +33,22 @@ while [ "$index" -lt 10 ]; do
 done
 
 # Approach four: +=
-# Note that to add something to an array, you can use the += syntax, 
-# but the item you're adding must be contained in parentheses.
+# Note that to add something to an array, you can use the += syntax, but the
+# item you're adding must be contained in parentheses.
 
 files=()
 for i in $(seq 4); do
     files+=("$i")
 done
 
-# BEWARE: I used to try to do this all the time. Thiss will give you a one 
-# element array that happens to be a long string with spaces in bewteen 
-# the elements (in this case, file names). This will FAIL if you try to 
-# work with file names or other variables that contain spaces.
+# BEWARE: I used to try to do this all the time. This will give you a one
+# element array that happens to be a long string with spaces in bewteen the
+# elements (in this case, file names). This will FAIL if you try to work with
+# file names or other variables that contain spaces.
 
 # files=($(ls -1)) # BAD!
 
-# To access member N of an arrya, use the syntax 
+# To access member N of an array, use the syntax 
 # ${ARRAY[N]}
 
 echo "The numbers 0-4 hard coded:"
@@ -92,13 +91,13 @@ for file in "${files[@]}"; do
     echo "file: $file"
 done
 
-# The differences is that @ will make sure that items that contain spaces 
-# are treated as one variable, but with * the spaces will be treated as 
-# delimiters and they will end up as different variables.
+# The differences is that @ will make sure that items that contain spaces are
+# treated as one variable, but with * the spaces will be treated as delimiters
+# and they will end up as different variables.
 
-# However, if you put "${array[*]}" in quotes it will treat the entire 
-# array as one string, whereas you NEED to put the "${array[@]}" in quoets 
-# to get the benefit of having each element be one variable.
+# However, if you put "${array[*]}" in quotes it will treat the entire array as
+# one string, whereas you NEED to put the "${array[@]}" in quoets to get the
+# benefit of having each element be one variable.
 
 echo
 echo "Manual list:"
@@ -121,13 +120,13 @@ for str in "${strings[@]}"; do
     echo "$str"
 done
 
-# To get the number of elements in the string, use the 
-# syntax: ${#ARRAY[*]} or ${#ARRAY[@]}
+# To get the number of elements in the string, use the syntax: ${#ARRAY[*]} or
+# ${#ARRAY[@]}
 
 echo
 echo "Number of elements in hard: ${#hard[*]}"
 echo "Number of elements in files: ${#files[*]}"
 echo "Number of elements in strings: ${#strings[*]}"
 
-# It is almost always in your best interests to use the "${array[@]}" 
-# syntax, just in case there are parentheses in your elements.
+# It is almost always in your best interests to use the "${array[@]}" syntax,
+# just in case there are parentheses in your elements.

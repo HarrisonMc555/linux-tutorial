@@ -20,8 +20,8 @@ while [ -n "$1" ]; do
 done
 
 
-# Execute every file.
-for file in "$files"
+# Execute every file. None of the files have whitespace, so this is ok.
+for file in $files
 do
     echo "====================== ${file} ======================"
     #echo "${file}:"

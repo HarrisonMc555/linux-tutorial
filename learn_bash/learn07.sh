@@ -4,12 +4,11 @@
 # Topic: Decision making with numbers
 # New commands: -eq, -ne, -lt, -le, -gt, -ge, if, elif, else
 
-# Programs usually need to make decisions based on inputs. However, 
-# all of these decisions need to be in a syntax that is compatible with 
-# the command line.
+# Programs usually need to make decisions based on inputs. However, all of these
+# decisions need to be in a syntax that is compatible with the command line.
 
-# To do so, we need to know how to make comparisons. This is done with 
-# a rather strange syntax.
+# To do so, we need to know how to make comparisons. This is done with a rather
+# strange syntax.
 
 # First, comparison are made using the following commands:
 # [ x -eq y ] is x == y
@@ -32,8 +31,8 @@
 
 # Note the structure of if then, elif then, elif then, ..., else, fi
 
-# Also, it should be noted that whitespace is NECESSARY. It has to be 
-# in this format, or it will NOT work!
+# Also, it should be noted that whitespace is NECESSARY. It has to be in this
+# format, or it will NOT work!
 
 # For example, these will not work:
 # if[x-eqy]
@@ -79,12 +78,11 @@ else
     echo $num2a" = "$num2b
 fi
 
-# Note that you need "then", "elif", "then", and "fi" all 
-# to be on their own lines, since they are individual 
-# statements.
+# Note that you need "then", "elif", "then", and "fi" all to be on their own
+# lines, since they are individual statements.
 
-# However, you can get around that by ending the statement 
-# early with a semicolon
+# However, you can get around that by ending the statement early with a
+# semicolon
 
 if [ 0 == 0 ]; then
     echo "Complete."
