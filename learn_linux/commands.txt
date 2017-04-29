@@ -27,7 +27,6 @@ List Of Commands
   -File contents
     -cat
     -less
-    -more
     -head
     -tail
   -Search/Parse

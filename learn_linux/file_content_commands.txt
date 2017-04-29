@@ -1,0 +1,159 @@
+=====================
+File Content Commands
+=====================
+
+This file contains commands that work with file contents.
+
+
+Command: cat
+============
+
+The name 'cat' is short for "concatenate". It simply prints the output of every
+file it is given to its standard output, one after another (concatenated). You
+don't have to specify more than one file; the most common usage is actually to
+simply print the contents of one file to the standard output, either to view or
+to pipe to another command.
+
+Example:
+$ cat file1.txt
+This is the text in file1.txt
+$ cat file2.txt
+I live in file2.txt
+This file has two lines
+$ cat file1.txt file2.txt
+This is the text in file1.txt
+I live in file2.txt
+This file has two lines
+
+
+Command: less
+=============
+
+The name 'less' is derived from its predecessor, 'more'. You can use it to view
+the contents of a file or the standard input. It provides a way to navigate a
+long file, interactively search through its contents, and perform several other
+actions. If there are any command line arguments it will display those files,
+else it will display the standard input.
+
+When you first use the 'less' command, you will notice that your entire terminal
+is taken over by the command. It will no longer display the previous commands
+and their outputs, but will only be displaying the contents of the file (or
+standard input). There are few things you need to know about navigating in less.
+
+  - Quitting: To quit, press 'q'.
+
+  - Help: To get help on the 'less' command, press 'h'.
+
+  - Moving: To move up and down a line at a time, press 'k' and 'j' (or <up> and
+      <down>). respectively. To move forward and backward a whole window at a
+      time, press 'f' and 'b'.  -
+
+  - Searching: To interactively search through the contents, press '/' and type
+      in the pattern to search for (it uses regular expressions). To cycle
+      forward and backward through matches, press 'n' and 'N'.
+
+
+Command: head
+=============
+
+The 'head' command is very similar to the cat command but only displays the
+first 10 lines of a file. If you want to display more or fewer lines, you can
+use the '-n' flag followed by the number of lines (with or without a space in
+between). If you pass a negative number to the '-n' flag, it will display all
+but the last n lines.
+
+Example:
+$ cat samplefile.txt
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+Line 11
+Line 12
+$ head samplefile.txt
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+$ head samplefile.txt -n 3
+Line 1
+Line 2
+Line 3
+$ head samplefile.txt -n3
+Line 1
+Line 2
+Line 3
+$ head samplefile.txt -n-4
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+
+
+Command: tail
+=============
+
+The 'tail' command is very similar to the head command. By default, the tail
+command prints the last 10 lines to the standard output. When given the '-n'
+flag, it instead prints the last n lines. If you pass a positive number (you add
+a leading '+' to the number) to the '-n' flag, it will display the file starting
+at line n.
+
+Example:
+$ cat samplefile.txt
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+Line 11
+Line 12
+$ tail samplefile.txt
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+Line 11
+Line 12
+$ tail samplefile.txt -n3
+Line 10
+Line 11
+Line 12
+$ tail samplefile.txt -n+3
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+Line 11
+Line 12
+
+
