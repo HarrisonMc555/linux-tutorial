@@ -46,7 +46,7 @@ echo $num2
 echo
 echo "Variables: "$num1", "$str1", "$num2
 
-# Essentially, the compiler simply replaces the $[var] with the variable.
+# Essentially, the compiler simply replaces the $<var> with the variable.
 
 # You can even do this:
 
@@ -62,7 +62,8 @@ echo "My String 2: "$str2
 echo
 echo 'My String 2 (but not really): $str2'
 
-# A double quote will expand what's inside if it recognizes it as a variable.
+# A double quote will expand, or interpolate, what's inside if it recognizes it
+# as a variable.
 
 echo
 echo "My String 2 once more: $str2"
@@ -71,6 +72,7 @@ echo "My String 2 once more: $str2"
 
 echo
 echo "My String 2 for the last time: '$str2'"
+echo 'This is not My String 2: "$str2"'
 
 # To do math is a little harder.
 
@@ -91,20 +93,20 @@ echo "$num1 + $num2 = $num3"
 
 files=$(ls)
 
-echopp
+echo
 echo "My file names in a variable:"
-echo $files
+echo "$files"
 
 # We can do some more math before we're done, though.
 
-num6=$(($num2*$num3))
+num6="$(($num2*$num3))"
 
 echo
-echo $num2" * "$num3" = "$num6
+echo "$num2 * $num3 = $num6"
 
 # The double parentheses allow us to use some familiar operators:
 
 echo
-echo "Before incrementing: "$num6
+echo "Before incrementing: $num6"
 ((num6++))
-echo "After incrementing: "$num6
+echo "After incrementing: $num6"

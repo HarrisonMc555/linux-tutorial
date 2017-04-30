@@ -20,8 +20,7 @@
 
 echo "The numbers 0-5:"
 
-for var in 0 1 2 3 4 5
-do
+for var in 0 1 2 3 4 5; do
     echo "Number: "$var
 done
 
@@ -29,8 +28,7 @@ num=0
 
 echo
 echo "Even numbers 0-9:"
-while [ $num -lt 10 ]
-do
+while [ $num -lt 10 ]; do
     echo "Number: "$num
     ((num+=2))
 done

@@ -20,27 +20,24 @@ root="."
 parent=".."
 file="samplefile.txt"
 
-if [ -e $root ]
-then
-    echo $root" exists."
+if [ -e "$root" ]; then
+    echo "$root exists."
 else
-    echo $root" does NOT exist."
+    echo "$root does NOT exist."
 fi
 
 
 
-if [ -e $parent ]
-then
-    echo $parent" exists."
+if [ -e "$parent" ]; then
+    echo "$parent exists."
 else
-    echo $parent" does NOT exist."
+    echo "$parent does NOT exist."
 fi
 
 
 
-if [ -e $file ]
-then
-    echo $file" exists."
+if [ -e "$file" ]; then
+    echo "$file exists."
 else
-    echo $file" does NOT exist."
+    echo "$file does NOT exist."
 fi

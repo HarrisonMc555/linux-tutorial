@@ -21,8 +21,7 @@ done
 
 
 # Execute every file. None of the files have whitespace, so this is ok.
-for file in $files
-do
+for file in $files; do
     echo "====================== ${file} ======================"
     #echo "${file}:"
     bash "$file"
@@ -38,8 +37,7 @@ read response
 
 response=$(echo $response | awk '{print tolower($0)}')
 
-if [ $response != "y" -a $response != "yes" ]
-then
+if [ $response != "y" -a $response != "yes" ]; then
     exit
 fi
 

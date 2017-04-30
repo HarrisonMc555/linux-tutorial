@@ -47,35 +47,35 @@ num2b=2
 
 # Simple example
 
-if [ $num1 -eq $num1 ]
+if [ "$num1" -eq "$num1" ]
 then
-    echo $num1" = "$num1
+    echo "$num1 = $num1"
 else
-    echo $num1" != "$num1"???"
+    echo "$num1 != $num1"
 fi
 
 # if, elif, else
 
-if [ $num2a -lt $num1 ]
+if [ "$num2a" -lt "$num1" ]
 then
-    echo $num2a" < "$num1
-elif [ $num2a -gt $num1 ]
+    echo "$num2a < $num1"
+elif [ "$num2a" -gt "$num1" ]
 then
-    echo $num2a" > "$num1
+    echo "$num2a > $num1"
 else
-    echo $num2a" = "$num1
+    echo "$num2a = $num1"
 fi
 
 # if, elif, else
 
-if [ $num2a -lt $num2b ]
+if [ "$num2a" -lt "$num2b" ]
 then
-    echo $num2a" < "$num2b
-elif [ $num2a -gt $num2b ]
+    echo "$num2a < $num2b"
+elif [ "$num2a" -gt "$num2b" ]
 then
-    echo $num2a" > "$num2b
+    echo "$num2a > $num2b"
 else
-    echo $num2a" = "$num2b
+    echo "$num2a = $num2b"
 fi
 
 # Note that you need "then", "elif", "then", and "fi" all to be on their own
@@ -84,7 +84,12 @@ fi
 # However, you can get around that by ending the statement early with a
 # semicolon
 
-if [ 0 == 0 ]; then
+# In addition, there are "true" and "false" commands, that simply exit with the
+# appropriate codes. These can be used for constants in your code. Keep in mind,
+# however, that if you set a variable to these they will be the literal strings
+# "true" and "false", not the commands.
+
+if [ true ]; then
     echo "Complete."
 else
     echo "That didn't work..."

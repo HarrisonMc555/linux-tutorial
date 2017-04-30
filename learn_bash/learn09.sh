@@ -18,26 +18,23 @@ str2="two"
 strOne="one"
 strEmpty=""
 
-if [ $str1 = $str2 ]
-then
-    echo $str1" = "$str2
+if [ "$str1" = "$str2" ]; then
+    echo "$str1 = $str2"
 else
-    echo $str1" != "$str2
+    echo "$str1 != $str2"
 fi
 
 
 
-if [ $str1 = $strOne ]
-then
-    echo $str1" = "$strOne
+if [ "$str1" = "$strOne" ]; then
+    echo "$str1 = $strOne"
 else
-    echo $str1" != "$strOne
+    echo "$str1 != $strOne"
 fi
 
 
 
-if [ -z $str1 ]
-then
+if [ -z "$str1" ]; then
     echo "There should be nothing in the quotes: '$str1'"
 else
     echo "There should be something in the quotes: '$str1'"
@@ -45,8 +42,7 @@ fi
 
 
 
-if [ -z $strEmpty ]
-then
+if [ -z "$strEmpty" ]; then
     echo "There should be nothing in the quotes: '$strEmpty'"
 else
     echo "There should be something in the quotes: '$strEmpty'"
@@ -54,8 +50,7 @@ fi
 
 
 
-if [ $strOne ]
-then
+if [ "$strOne" ]; then
     echo "There should be something in the quotes: '$strOne'"
 else
     echo "There should be nothing in the quotes: '$strOne'"
